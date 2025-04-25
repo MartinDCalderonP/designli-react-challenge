@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--color-header-bg);
+  color: var(--color-text);
+
+  .title {
+    color: var(--color-text);
+    font-size: 1.5rem;
+    font-weight: bold;
+    max-width: 30%;
+  }
+
+  .connectionStatus {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background-color: var(--color-connected);
+      margin-right: 0.375rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .connected {
+      color: var(--color-connected);
+
+      &::before {
+        background-color: var(--color-connected);
+      }
+    }
+
+    .disconnected {
+      color: var(--color-disconnected);
+
+      &::before {
+        background-color: var(--color-disconnected);
+      }
+    }
+  }
+
+  .headerActions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

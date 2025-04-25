@@ -1,0 +1,41 @@
+.app {
+  background-color: var(--color-main-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main {
+    background-color: var(--color-main-bg);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+
+    @media (min-width: 48rem) {
+      flex-direction: row;
+      padding: 1rem;
+    }
+
+    .leftPanel {
+      flex-shrink: 0;
+      width: 100%;
+
+      @media (min-width: 48rem) {
+        width: 18.75rem;
+      }
+    }
+
+    .rightPanel {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 1rem;
+      padding: 0 1.5rem;
+
+      @media (min-width: 48rem) {
+        gap: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='light'] {
+  --color-accent-hover: #2563eb;
+  --color-accent: #3b82f6;
+  --color-api-link-light: #1e90ff;
+  --color-button-bg: #60a5fa;
+  --color-button-disabled-bg: #94a3b8;
+  --color-button-hover-bg: #2563eb;
+  --color-chart-fill: #93c5fd;
+  --color-chart-line: #3b82f6;
+  --color-connected: #10b981;
+  --color-disconnected: #ff4d4f;
+  --color-error-bg: #ffe6e6;
+  --color-error-border: #ff4d4d;
+  --color-error-text: #b71c1c;
+  --color-error-hover-bg: #f5c2c7;
+  --color-error-hover-text: #b71c1c;
+  --color-field-bg: #f8fafc;
+  --color-field-border: #e2e8f0;
+  --color-field-text: #1e293b;
+  --color-header-bg: #f0f4ff;
+  --color-input-border: #e2e8f0;
+  --color-link-light: #1e90ff;
+  --color-main-bg: #ffffff;
+  --color-muted: #64748b;
+  --color-shadow: #d9d9d9;
+  --color-skeleton-bg: #e0e0e0;
+  --color-success-bg: #e6ffe6;
+  --color-success-border: #10b981;
+  --color-success-text: #10b981;
+  --color-text: #213547;
+  --color-toggle-button-bg: #93c5fd;
+}
+
+:root[data-theme='dark'] {
+  --color-accent-hover: #1d4ed8;
+  --color-accent: #3b82f6;
+  --color-api-link-dark: #87cefa;
+  --color-button-bg: #1e40af;
+  --color-button-disabled-bg: #4b5563;
+  --color-button-hover-bg: #1e3a8a;
+  --color-chart-fill: #1e3a8a;
+  --color-chart-line: #1e40af;
+  --color-connected: #22c55e;
+  --color-disconnected: #ff7875;
+  --color-error-bg: #4d1f1f;
+  --color-error-border: #b71c1c;
+  --color-error-hover-bg: #7f1d1d;
+  --color-error-hover-text: #fef2f2;
+  --color-error-text: #ff4d4d;
+  --color-field-bg: #1e293b;
+  --color-field-border: #374151;
+  --color-field-text: #ffffff;
+  --color-header-bg: #0f172a;
+  --color-input-border: #e2e8f0;
+  --color-link-dark: #87cefa;
+  --color-main-bg: #1e293b;
+  --color-muted: #9ca3af;
+  --color-shadow: #1a1a1a;
+  --color-skeleton-bg: #374151;
+  --color-success-bg: #2e7d32;
+  --color-success-border: #2e7d32;
+  --color-success-text: #d1fae5;
+  --color-text: #ffffff;
+  --color-toggle-button-bg: #1e3a8a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+  min-height: 100vh;
+  background-color: var(--color-main-bg);
+  color: var(--color-text);
+}

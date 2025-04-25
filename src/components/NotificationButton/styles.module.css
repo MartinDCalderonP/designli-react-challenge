@@ -1,0 +1,4 @@
+.notificationButton {
+  background-color: var(--color-toggle-button-bg);
+  color: var(--color-text);
+}
