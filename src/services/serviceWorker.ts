@@ -27,6 +27,6 @@ export const loadServiceWorker = () => {
     })
 
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    console.log('Service Worker ahora controla la página')
+    console.log('Service Worker now controls the page')
   })
 }
