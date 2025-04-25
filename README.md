@@ -108,18 +108,18 @@ src/
 - React, TypeScript, Vite
 - Others: vite-plugin-pwa, Finnhub API, ESLint, Lucide Icons, etc.
 
-## Implementaciones que exceden el Challenge
+## Implementations that Exceed the Challenge
 
-Este proyecto incluye algunas características y desarrollos que exceden los requerimientos originales del challenge:
+This project includes some features and developments that go beyond the original requirements of the challenge:
 
-- **Indicador de conexión**: Se muestra en la interfaz si la aplicación está conectada o no al WebSocket/API en tiempo real.
-- **Selector y persistencia de tema (claro/oscuro)**: El usuario puede alternar entre tema claro y oscuro, y la preferencia se guarda para futuras sesiones.
-- **Funciones avanzadas con objetos**: Se implementaron funciones adicionales que manipulan y gestionan objetos de manera más compleja de lo solicitado.
-- **Más hooks personalizados**: Se crearon hooks personalizados extra para mejorar la modularidad y reutilización del código, más allá de lo estrictamente necesario para cumplir el challenge.
-- **Hook de filtrado de stocks por rango de tiempo**: Se creó el hook `useFilteredStocks`, que encapsula la lógica para filtrar el historial de precios de las acciones según el período seleccionado en el gráfico. Además, centraliza y exporta los valores de rango de tiempo disponibles para su reutilización.
+- **Connection indicator**: The interface shows whether the application is connected to the WebSocket/API in real time.
+- **Theme selector and persistence (light/dark)**: The user can toggle between light and dark themes, and the preference is saved for future sessions.
+- **Advanced object functions**: Additional functions were implemented to manipulate and manage objects in a more complex way than requested.
+- **More custom hooks**: Extra custom hooks were created to improve code modularity and reusability, beyond what was strictly necessary to meet the challenge.
+- **Stock filtering hook by time range**: The `useFilteredStocks` hook was created, encapsulating the logic to filter the price history of stocks according to the selected period in the chart. It also centralizes and exports the available time range values for reuse.
 
-Estas adiciones buscan demostrar buenas prácticas, escalabilidad y robustez en la arquitectura del proyecto.
+These additions aim to demonstrate best practices, scalability, and robustness in the project architecture.
 
-## Selección de período en el gráfico
+## Chart Period Selection
 
-El gráfico de precios ahora permite seleccionar el período de tiempo a visualizar: 1 hora, 1 día, 1 semana, 1 mes o todo el historial. Los botones de selección filtran los datos mostrados en el gráfico en tiempo real, mejorando la experiencia de análisis para el usuario.
+The price chart now allows you to select the time period to display: 1 hour, 1 day, 1 week, 1 month, or the entire history. The selection buttons filter the data shown in the chart in real time, improving the user's analysis experience.
