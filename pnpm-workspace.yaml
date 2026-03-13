@@ -1,0 +1,5 @@
+packages:
+  - .
+
+overrides:
+  '@rollup/plugin-terser': 1.0.0
