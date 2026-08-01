@@ -1,10 +1,12 @@
 minimumReleaseAgeExclude:
   - js-yaml@4.1.2 || 4.3.0
   - '@babel/core@7.29.1'
-  - brace-expansion@5.0.7 || 5.0.8
+  - brace-expansion@1.1.17 || 2.1.3 || 5.0.7 || 5.0.8
   - fast-uri@4.0.1 || 4.1.1
   - postcss@8.5.18
 overrides:
+  brace-expansion@<1.1.17: ^1.1.17
+  brace-expansion@>=2.0.0 <2.1.3: ^2.1.3
   brace-expansion@>=3.0.0 <5.0.7: ^5.0.7
   brace-expansion@>=4.0.0 <5.0.8: ^5.0.8
   brace-expansion@>=5.0.0 <5.0.6: '>=5.0.6'
